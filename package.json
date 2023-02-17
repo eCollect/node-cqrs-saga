@@ -26,7 +26,7 @@
     "expect.js": ">= 0.1.2",
     "mocha": "^10.2.0",
     "mongodb": "^5.0.1",
-    "redis": "^3.0.2",
+    "redis": "^4.6.4",
     "tingodb": ">= 0.0.1"
   },
   "description": "Node-cqrs-saga is a node.js module that helps to implement the sagas in cqrs. It can be very useful as domain component if you work with (d)ddd, cqrs, eventdenormalizer, host, etc.",
