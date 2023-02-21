@@ -21,7 +21,6 @@
     "uuid": "3.3.2"
   },
   "devDependencies": {
-    "azure-storage": ">=0.3.0",
     "eslint": ">=1.0.0",
     "expect.js": ">= 0.1.2",
     "mocha": "^10.2.0",
