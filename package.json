@@ -1,7 +1,7 @@
 {
   "author": "adrai",
   "name": "cqrs-saga",
-  "version": "1.11.14",
+  "version": "1.12.0",
   "private": false,
   "main": "index.js",
   "engines": {
@@ -40,13 +40,13 @@
     "eventdenormalizer",
     "domain"
   ],
-  "homepage": "https://github.com/adrai/node-cqrs-saga",
+  "homepage": "https://github.com/eCollect/node-cqrs-saga/",
   "repository": {
     "type": "git",
-    "url": "git@github.com:adrai/node-cqrs-saga.git"
+    "url": "git@github.com:eCollect/node-cqrs-saga.git"
   },
   "bugs": {
-    "url": "https://github.com/adrai/node-cqrs-saga/issues"
+    "url": "https://github.com/eCollect/node-cqrs-saga//issues"
   },
   "licenses": [
     {
