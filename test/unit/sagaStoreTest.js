@@ -79,7 +79,7 @@ describe('sagaStore', function() {
 
     describe('with options containing a type property with the value of', function() {
 
-      var types = ['inmemory', 'mongodb', 'redis'/*, 'azuretable'*/];
+      var types = ['inmemory', 'mongodb', 'redis'];
 
       types.forEach(function(type) {
 
@@ -550,8 +550,6 @@ describe('sagaStore', function() {
                       expect(cmds[3].commitStamp.getTime()).to.eql(saga3._commitStamp.getTime());
                       expect(cmds[3].command.id).to.eql(cmds3[0].payload.id);
                       expect(cmds[3].command.data).to.eql(cmds3[0].payload.data);
-
-                      if (type === 'azuretable') return done();
 
                       store.getUndispatchedCommands({ skip: 1, limit: 2 }, function (err, cmds) {
                         expect(err).not.to.be.ok();

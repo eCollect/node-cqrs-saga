@@ -1,7 +1,7 @@
 {
   "author": "adrai",
   "name": "cqrs-saga",
-  "version": "1.11.14",
+  "version": "1.12.0",
   "private": false,
   "main": "index.js",
   "engines": {
@@ -11,23 +11,21 @@
     "lib": "./lib"
   },
   "dependencies": {
-    "async": "1.5.2",
-    "debug": "3.1.0",
-    "dotty": "0.0.2",
+    "async": "^3.2.4",
+    "debug": "^4.3.4",
+    "dotty": "^0.1.2",
     "jsondate": "0.0.1",
-    "lodash": "4.17.19",
+    "lodash": "^4.17.21",
     "parent-require": "1.0.0",
     "tolerance": "1.0.0",
-    "uuid": "3.3.2"
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
-    "azure-storage": ">=0.3.0",
-    "cradle": ">=0.6.7",
     "eslint": ">=1.0.0",
     "expect.js": ">= 0.1.2",
-    "mocha": "3.x.x",
-    "mongodb": "2.1.x",
-    "redis": ">= 0.10.1",
+    "mocha": "^10.2.0",
+    "mongodb": "^5.0.1",
+    "redis": "^4.6.4",
     "tingodb": ">= 0.0.1"
   },
   "description": "Node-cqrs-saga is a node.js module that helps to implement the sagas in cqrs. It can be very useful as domain component if you work with (d)ddd, cqrs, eventdenormalizer, host, etc.",
@@ -42,13 +40,13 @@
     "eventdenormalizer",
     "domain"
   ],
-  "homepage": "https://github.com/adrai/node-cqrs-saga",
+  "homepage": "https://github.com/eCollect/node-cqrs-saga/",
   "repository": {
     "type": "git",
-    "url": "git@github.com:adrai/node-cqrs-saga.git"
+    "url": "git@github.com:eCollect/node-cqrs-saga.git"
   },
   "bugs": {
-    "url": "https://github.com/adrai/node-cqrs-saga/issues"
+    "url": "https://github.com/eCollect/node-cqrs-saga//issues"
   },
   "licenses": [
     {
@@ -57,6 +55,7 @@
     }
   ],
   "scripts": {
-    "test": "mocha test/unit && mocha test/integration"
+    "unit-tests": "mocha test/unit -R spec -t 10000 --recursive --exit",
+    "integration-tests": "mocha test/integration -R spec -t 10000 --exit"
   }
 }
